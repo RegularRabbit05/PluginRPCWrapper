@@ -1,0 +1,17 @@
+{
+  "name": "plugin-rpc-wrapper",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "@discord/embedded-app-sdk": "^2.4.0"
+  }
+}
