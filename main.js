@@ -248,10 +248,17 @@ function closeApp() {
   }, 500);
 }
 
+function popupUrl(url) {
+  discordSdk.commands.openExternalLink({
+    url: url,
+  });
+}
+
 function gameFunc(cmd) {
   const parts = cmd.split(' ');
   switch (parts[0]) {
     case "close": closeApp(); break;
+    case "url": popupUrl(parts[1]); break;
     default: discordSdk.commands.captureLog({
       level: 'error',
       message: "Received unknown rpc command: " + parts[0]
